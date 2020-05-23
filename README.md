@@ -12,7 +12,7 @@ Before you start the server, you need to set up configuration:
 
 ### Gettin API keys
 
-1. Log in into your [https://www.awseducate.com/student](AWS account panel)
+1. Log in into your [AWS account panel](https://www.awseducate.com/student)
 2. Go to _My Classrooms_ tab
 3. In the list of courses click the button _Go to classroom_
 
