@@ -1,5 +1,4 @@
 const dropZone = document.querySelector('.drop-zone');
-const dropZoneLabel = dropZone.querySelector('p');
 const results = document.querySelector('.results');
 const submitButton = document.querySelector('.submit-button');
 let imageBase64;
@@ -17,19 +16,12 @@ const handleMessage = (response) => {
         console.log(messageObj);
         const labels = messageObj.detected;
 
-        const title = document.createElement('h4');
-        title.innerHTML = 'Detected labels:';
-
         results.innerHTML = '';
-        const list = document.createElement('ol');
         labels.forEach(label => {
-            console.log(label);
-            const listElement = document.createElement('li');
-            listElement.innerHTML = `${label.Name}: ${label.Confidence} <br />`;
-            list.appendChild(listElement);
+            results.innerHTML = results.innerHTML + `${label.Name}: ${label.Confidence} <br />`;
         });
-        results.appendChild(list);
-    } else {
+    }
+    else {
         results.innerHTML = message;
     }
 };
@@ -72,23 +64,4 @@ const sendImage = () => {
 }
 
 submitButton.addEventListener('click', sendImage);
-//#endregion
-
-//#region UI changes
-dropZone.addEventListener('drop', () => {
-    dropZone.classList.remove('drag-over');
-    dropZoneLabel.classList.add('hidden');
-});
-
-document.addEventListener('dragover', () => {
-    dropZone.classList.add('drag-over');
-    dropZoneLabel.classList.remove('hidden');
-})
-
-document.addEventListener('dragleave', () => {
-    dropZone.classList.remove('drag-over');
-});
-
-dropZoneLabel.addEventListener('dragover', (e) => e.preventDefault());
-dropZoneLabel.addEventListener('drop', (e) => e.preventDefault());
 //#endregion

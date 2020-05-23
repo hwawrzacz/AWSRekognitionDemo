@@ -5,13 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rekognition demo</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        .drop-zone {
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        .results {
+            width: 500px;
+            height: 300px;
+            border: 1px dashed rgb(0, 136, 255);
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <p>Rekognition demo</p>
-    </header>
     <div class="drop-zone">
         <p dr>Drop your file here</p>
     </div>
@@ -19,17 +28,7 @@
     <button class="submit-button">Submit</button>
 
     <h3>Results</h3>
-    <div class="results">
-        <h3>Detected labels:</h3>
-        <ol>
-            <li>Label : 98.2342523%</li>
-            <li>Label : 98.2342523%</li>
-            <li>Label : 98.2342523%</li>
-            <li>Label : 98.2342523%</li>
-            <li>Label : 98.2342523%</li>
-            <li>Label : 98.2342523%</li>
-        </ol>
-    </div>
+    <div class="results"></div>
 
     <script src="loader.js"></script>
 </body>
