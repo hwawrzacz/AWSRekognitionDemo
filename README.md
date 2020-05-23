@@ -15,6 +15,9 @@ Before you start the server, you need to set up configuration:
 1. Log in into your [AWS account panel](https://www.awseducate.com/student)
 2. Go to _My Classrooms_ tab
 3. In the list of courses click the button _Go to classroom_
+4. Click the _Account details_ button
+5. Click _Show_ button
+6. Paste your keys in **aws-rekognition.js** file, save and restart server
 
 ___
 
