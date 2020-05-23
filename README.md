@@ -1,6 +1,6 @@
-#AWS Rekognition Demo
+# AWS Rekognition Demo
 
-###Preparation
+### Preparation
 
 Before you start the server, you need to set up configuration:
 
@@ -10,15 +10,18 @@ Before you start the server, you need to set up configuration:
 
 ---
 
-###Gettin API keys
+### Gettin API keys
 
-1. Log in into your [https://www.awseducate.com/student](AWS account panel)
+1. Log in into your [AWS account panel](https://www.awseducate.com/student)
 2. Go to _My Classrooms_ tab
 3. In the list of courses click the button _Go to classroom_
+4. Click the _Account Details_ button
+5. Click _Show_ button
+6. Copy and paste your keys into **aws-rekognition.js** file, save file and restart server
 
 ___
 
-###Getting started
+### Getting started
 
 Standard procedure for node projects:
 
@@ -32,7 +35,7 @@ The server should start, and print _Ready!_ in console
 
 ___
 
-###Running the app
+### Running the app
 
 1. Go to **client** folder
 2. Open **index.html** file
