@@ -1,6 +1,6 @@
-#AWS Rekognition Demo
+# AWS Rekognition Demo
 
-###Preparation
+### Preparation
 
 Before you start the server, you need to set up configuration:
 
@@ -10,7 +10,7 @@ Before you start the server, you need to set up configuration:
 
 ---
 
-###Gettin API keys
+### Gettin API keys
 
 1. Log in into your [https://www.awseducate.com/student](AWS account panel)
 2. Go to _My Classrooms_ tab
@@ -18,7 +18,7 @@ Before you start the server, you need to set up configuration:
 
 ___
 
-###Getting started
+### Getting started
 
 Standard procedure for node projects:
 
@@ -32,7 +32,7 @@ The server should start, and print _Ready!_ in console
 
 ___
 
-###Running the app
+### Running the app
 
 1. Go to **client** folder
 2. Open **index.html** file
